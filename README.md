@@ -1,8 +1,12 @@
 watch.watch.peoplepower
 ===
-watch.peoplepower21.org를 `watch`하는 프로젝트<br />
-참여연대 열려라국회 사이트 크롤러입니다<br />
+watch.peoplepower21.org를 `watch`하는 프로젝트로 참여연대 열려라국회 사이트 크롤러입니다<br />
 이 프로젝트의 기원은 코드포서울 [Congress Report](https://github.com/codeforseoul/congress-report)입니다.
+
+Sluggish Hackers
+---
+- Sluggish Hackers 2번째 프로젝트로 ***x팀과 협업
+- [협업 내용은 이곳에서 확인할 수 있습니다](https://github.com/sluggishhackers/collaborators/issues/2)
 
 How To Use
 ---
