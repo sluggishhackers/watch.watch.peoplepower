@@ -1,6 +1,6 @@
 watch.watch.peoplepower
 ===
-watch.peoplepower21.org를 `watch`하는 프로젝트로 참여연대 열려라국회 사이트 크롤러입니다<br />
+참여연대 [열려라국회 사이트(watcha.peoplepower21.org)](http://watch.peoplepower21.org/) 크롤러로 왓치.피플파워 사이트를 왓치하는 왓치.왓치.피플파워 프로젝트입니다.<br />
 이 프로젝트의 기원은 코드포서울 [Congress Report](https://github.com/codeforseoul/congress-report)입니다.
 
 Sluggish Hackers
