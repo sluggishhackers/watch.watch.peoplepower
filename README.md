@@ -1,6 +1,46 @@
 watch.watch.peoplepower
 ===
-watch.peoplepower21.org를 `watch`하는 프로젝트, 참여연대 열려라국회 사이트 크롤러입니다. 이 프로젝트의 기원은 코드포서울 [Congress Report](https://github.com/codeforseoul/congress-report)입니다.
+watch.peoplepower21.org를 `watch`하는 프로젝트<br />
+참여연대 열려라국회 사이트 크롤러입니다<br />
+이 프로젝트의 기원은 코드포서울 [Congress Report](https://github.com/codeforseoul/congress-report)입니다.
+
+How To Use
+---
+0. 초기화
+```golang
+store := store.New()
+crawlerService := crawler.New(store)
+```
+
+1. 국회의원 목록 수집하기
+```golang
+crawlerService.FetchPeople()
+```
+
+2. 본회의 목록 & 표결정보(optional) 수집하기
+```golang
+crawlerService.FetchSessions(true)
+crawlerService.FetchSessions(false) // 표결정보 제외하고 수집하기
+```
+
+3. 수집 후 표결정보 CSV로 꺼내기
+```golang
+exporter := exporter.New()
+votes := store.GetVotes()
+
+// Column Headers
+rows := [][]string{
+   {"idx", "vote", "bill_idx", "bill_name", "turn", "status", "date", "name_kr", "party"},
+}
+
+for _, v := range votes {
+   rows = append(rows, []string{v.ID, v.Result, v.BillID, v.BillName, v.SessionTurn, v.Status, v.Date, v.PersonName, v.PersonParty})
+}
+
+exporter.CSV(rows, "20.csv")
+
+// File "data/20.csv" is created!
+```
 
 Features
 ---
@@ -46,3 +86,7 @@ Credit
 - [배여운(데이터 저널리스트)](https://github.com/the6thm0nth)
 - [ftto(크루)](https://ftto.kr)
 - 희진([Congress Report](https://github.com/codeforseoul/congress-report) 개발자)
+
+LICENSE
+---
+[MIT](LICENSE)

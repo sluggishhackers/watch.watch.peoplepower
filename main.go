@@ -18,7 +18,7 @@ func main() {
 	// crawlerService.FetchSessions(true)
 	crawlerService.FetchTestSession()
 
-	// 표결정보 CSV로 꺼내기
+	// 표결정보 CSV로 추출하기
 	votes := store.GetVotes()
 	ExportVotes(votes)
 }
