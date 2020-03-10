@@ -5,7 +5,7 @@ watch.peoplepower21.org를 `watch`하는 프로젝트로 참여연대 열려라�
 
 Sluggish Hackers
 ---
-- Sluggish Hackers 2번째 프로젝트로 ***x팀과 협업
+- Sluggish Hackers 2번째 프로젝트로 ***팀과 협업
 - [협업 내용은 이곳에서 확인할 수 있습니다](https://github.com/sluggishhackers/collaborators/issues/2)
 
 How To Use
