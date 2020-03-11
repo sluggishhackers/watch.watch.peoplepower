@@ -4,12 +4,12 @@ watch.watch.peoplepower
 이 프로젝트의 기원은 코드포서울 [Congress Report](https://github.com/codeforseoul/congress-report)입니다.
 
 Sluggish Hackers
----
+===
 - Sluggish Hackers 2번째 프로젝트로 ***팀과 협업
 - [협업 내용은 이곳에서 확인할 수 있습니다](https://github.com/sluggishhackers/collaborators/issues/2)
 
 How To Use
----
+===
 0. 초기화
 ```golang
 store := store.New()
@@ -47,7 +47,7 @@ exporter.CSV(rows, "20.csv")
 ```
 
 Features
----
+===
 
 #### 크롤링 대상
 1. [x] 국회의원별 표결 정보
@@ -62,7 +62,7 @@ Features
   * [ ] JSON
 
 Development
----
+===
 
 #### 1. Crawler
 
@@ -80,17 +80,17 @@ Development
 1. **CSV**
 
 Open Sources
----
+===
 - [colly](https://github.com/gocolly/colly)
 - [goquery](https://github.com/PuerkitoBio/goquery)
 
 Credit
----
+===
 - [춘식(Sluggish Hackers 운영자)](https://github.com/the6thm0nth)
 - [배여운(데이터 저널리스트)](https://github.com/the6thm0nth)
 - [ftto(크루)](https://ftto.kr)
 - 희진([Congress Report](https://github.com/codeforseoul/congress-report) 개발자)
 
 LICENSE
----
+===
 [MIT](LICENSE)
